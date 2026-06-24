@@ -269,21 +269,48 @@
 
 
     <!-- Contact -->
+<section id="contact" class="contact">
 
-    <section id="contact" class="contact">
+    <h2>Contact Us</h2>
 
-        <h2>Let's Work Together</h2>
+    <form id="contactForm">
 
-        <p>📧 contact@editkaro.in</p>
-        <p>📱 +91 98765 43210</p>
-        <p>🌐 www.editkaro.in</p>
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
 
-        <p>
-            Ready to transform your content into
-            engaging visual experiences.
-        </p>
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
 
-    </section>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="contactMessage"></p>
+
+</section>
 
 
     <!-- Footer -->
