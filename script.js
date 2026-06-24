@@ -187,69 +187,7 @@ portfolioVideos.forEach(video => {
 
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzPAjjeHfsGp1jrSzTmdiW-a6uQtTHSrymrxat02BJXIo3L2vInvYoijvdrfaHNlx60Fw/exec";
 
-// Email Subscription Form
-const emailForm = document.getElementById("emailForm");
 
-if (emailForm) {
-    emailForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const email = document.getElementById("subscriberEmail").value;
-
-        try {
-            await fetch(SCRIPT_URL, {
-                method: "POST",
-                body: JSON.stringify({
-                    type: "subscriber",
-                    email: email
-                })
-            });
-
-            document.getElementById("emailMessage").innerText =
-                "Subscribed Successfully!";
-
-            emailForm.reset();
-
-        } catch (error) {
-            console.error(error);
-            document.getElementById("emailMessage").innerText =
-                "Subscription failed!";
-        }
-    });
-}
-
-// Contact Form
-const contactForm = document.getElementById("contactForm");
-
-if (contactForm) {
-    contactForm.addEventListener("submit", async (e) => {
-
-        e.preventDefault();
-
-        try {
-            await fetch(SCRIPT_URL, {
-                method: "POST",
-                body: JSON.stringify({
-                    type: "contact",
-                    name: document.getElementById("name").value,
-                    email: document.getElementById("email").value,
-                    phone: document.getElementById("phone").value,
-                    message: document.getElementById("message").value
-                })
-            });
-
-            document.getElementById("contactMessage").innerText =
-                "Message Sent Successfully!";
-
-            contactForm.reset();
-
-        } catch (error) {
-            console.error(error);
-            document.getElementById("contactMessage").innerText =
-                "Message sending failed!";
-        }
-    });
-}
 
 
 // Email Form
@@ -274,20 +212,16 @@ email:email
 })
 });
 
-document.getElementById("emailMessage").innerText =
-"Subscribed Successfully!";
-
+showPopup("✅ Thank you for subscribing to Editkaro!");
 emailForm.reset();
 
 }catch(error){
 
 console.error(error);
 
-document.getElementById("emailMessage").innerText =
-"Subscription Failed";
+alert("❌ Subscription failed. Please try again later.");
 
 }
-
 });
 
 }
@@ -314,8 +248,7 @@ message:document.getElementById("message").value
 })
 });
 
-document.getElementById("contactMessage").innerText =
-"Message Sent Successfully!";
+alert("✅ Thank you! Your message has been sent successfully.");
 
 contactForm.reset();
 
@@ -323,11 +256,19 @@ contactForm.reset();
 
 console.error(error);
 
-document.getElementById("contactMessage").innerText =
-"Message Failed";
+showPopup("❌ Failed to send message. Please try again later.");
 
 }
 
 });
 
+}
+
+function showPopup(message){
+    document.getElementById("popupText").innerText = message;
+    document.getElementById("successPopup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("successPopup").style.display = "none";
 }

@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <h3>Success!</h3>
+        <p id="popupText"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
 <body>
 <div class="container">
     <!-- Header -->
@@ -15,11 +23,12 @@
         <h1>Editkaro.in</h1>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#categories">Categories</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#categories">Categories</a>
+    <a href="#contact">Contact</a>
+</nav>
     </header>
 
 
@@ -69,6 +78,7 @@
         <button type="submit">
             Subscribe
         </button>
+
 
     </form>
 
@@ -253,65 +263,109 @@
 
     <!-- About -->
 
-    <section class="about">
+    <section id="about" class="about">
+    <h2>About Editkaro.in</h2>
 
-        <h2>Why Choose Editkaro?</h2>
+    <p class="about-text">
+        We help brands, creators and businesses create high-performing
+        content through professional video editing and social media marketing.
+    </p>
 
-        <ul>
-            <li>Professional Video Editing</li>
-            <li>Creative Storytelling</li>
-            <li>Fast Delivery</li>
-            <li>Social Media Growth Focused</li>
-            <li>Custom Editing Solutions</li>
-        </ul>
+    <div class="about-grid">
 
-    </section>
+        <div class="about-card">
+            <h3>🎯 Mission</h3>
+            <p>
+                Deliver engaging visual stories that drive results.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>🚀 Vision</h3>
+            <p>
+                Become India's leading creative content agency.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>👨‍💻 Team</h3>
+            <p>
+                Skilled editors, marketers and creative storytellers.
+            </p>
+        </div>
+
+    </div>
+</section>
 
 
     <!-- Contact -->
-<section id="contact" class="contact">
+       <section id="contact" class="contact">
 
-    <h2>Contact Us</h2>
+    <div class="contact-container">
 
-    <form id="contactForm">
+        <div class="contact-info">
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Your Name"
-            required
-        >
+            <h2>Let's Work Together </h2>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Your Email"
-            required
-        >
+            <p>
+                Ready to transform your content into engaging visual experiences?
+                Contact us today and let's create something amazing.
+            </p>
 
-        <input
-            type="tel"
-            id="phone"
-            placeholder="Phone Number"
-            required
-        >
+            <div class="contact-details">
+                <p>📧 contact@editkaro.in</p>
+                <p>📱 +91 98765 43210</p>
+                <p>🌐 www.editkaro.in</p>
+                <p>📍 Hyderabad, India</p>
+            </div>
 
-        <textarea
-            id="message"
-            placeholder="Your Message"
-            required
-        ></textarea>
+        </div>
 
-        <button type="submit">
-            Send Message
-        </button>
+        <div class="contact-form-box">
 
-    </form>
+            <form id="contactForm">
 
-    <p id="contactMessage"></p>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Tell us about your project..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message 
+                </button>
+
+            </form>
+
+            <p id="contactMessage"></p>
+
+        </div>
+
+    </div>
 
 </section>
-
 
     <!-- Footer -->
 
