@@ -264,11 +264,3 @@ showPopup("❌ Failed to send message. Please try again later.");
 
 }
 
-function showPopup(message){
-    document.getElementById("popupText").innerText = message;
-    document.getElementById("successPopup").style.display = "flex";
-}
-
-function closePopup(){
-    document.getElementById("successPopup").style.display = "none";
-}
