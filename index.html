@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <!-- Header -->
+
+    <header class="header">
+        <h1>Editkaro.in</h1>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/Editkaro.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-badge">
+    Video Editing & Social Media Marketing Agency
+        </p> 
+
+        <h2 id="typing-text"></h2>
+
+        <p>
+            Professional video editing and social media marketing
+            solutions for brands, creators, and businesses.
+        </p>
+
+        <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+
+    </section>
+
+    <section class="email-collector">
+
+    <h2>Subscribe for Updates</h2>
+
+    <p>Get the latest video editing and marketing insights.</p>
+
+    <form id="emailForm">
+
+        <input
+            type="email"
+            id="subscriberEmail"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </form>
+
+    <p id="emailMessage"></p>
+
+</section>
+
+
+    <!-- Stats Section -->
+
+   <section class="stats">
+
+    <h2>Our Impact</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 class="counter" data-target="20">0</h3>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Video Views Generated</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Categories -->
+
+    <section id="categories" class="categories">
+
+        <h2>Video Categories</h2>
+
+        <button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="short-form">Short Form</button>
+<button class="filter-btn" data-filter="long-form">Long Form</button>
+<button class="filter-btn" data-filter="gaming">Gaming</button>
+<button class="filter-btn" data-filter="football">Football</button>
+<button class="filter-btn" data-filter="ecommerce">eCommerce Ads</button>
+<button class="filter-btn" data-filter="documentary">Documentary</button>
+<button class="filter-btn" data-filter="color-grading">Color Grading</button>
+<button class="filter-btn" data-filter="anime">Anime</button>
+<button class="filter-btn" data-filter="ads">Advertisements</button>
+
+    </section>
+
+
+    <!-- Portfolio -->
+
+    <section id="portfolio" class="portfolio-section">
+
+        <h2>Our Portfolio</h2>
+        <p class="section-description">
+    Explore our work across multiple content styles,
+    from viral short-form reels to cinematic documentaries.
+</p>
+
+        <div class="portfolio-grid">
+
+        <!-- Short Form -->
+
+        <div class="card" data-category="short-form">
+
+            <video muted playsinline>
+                <source src="videos/shortform1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Instagram Reel</h3>
+            <p>Short Form Video Editing</p>
+
+        </div>
+
+
+        <!-- Long Form -->
+
+        <div class="card" data-category="long-form">
+
+            <video muted playsinline>
+                <source src="videos/longform1.mp4" type="video/mp4">
+            </video>
+
+            <h3>YouTube Video</h3>
+            <p>Long Form Content Editing</p>
+
+        </div>
+
+
+        <!-- Gaming -->
+
+        <div class="card" data-category="gaming">
+
+            <video muted playsinline>
+                <source src="videos/gaming1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Gaming Montage</h3>
+            <p>High Energy Gaming Edit</p>
+
+        </div>
+
+
+        <!-- Football -->
+
+        <div class="card" data-category="football">
+
+            <video muted playsinline>
+                <source src="videos/football1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Football Highlights</h3>
+            <p>Cinematic Sports Editing</p>
+
+        </div>
+
+
+        <!-- Ecommerce -->
+
+        <div class="card" data-category="ecommerce">
+
+            <video muted playsinline>
+                <source src="videos/ecommerce1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Product Advertisement</h3>
+            <p>eCommerce Marketing Video</p>
+
+        </div>
+
+
+        <!-- Documentary -->
+
+        <div class="card" data-category="documentary">
+
+            <video muted playsinline>
+                <source src="videos/documentary1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Documentary Style</h3>
+            <p>Storytelling Focused Editing</p>
+
+        </div>
+
+
+        <!-- Color Grading -->
+
+        <div class="card" data-category="color-grading">
+
+            <video muted playsinline>
+                <source src="videos/colorgrading1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Color Grading Showcase</h3>
+            <p>Professional Color Correction</p>
+
+        </div>
+
+
+        <!-- Anime -->
+
+        <div class="card" data-category="anime">
+
+            <video muted playsinline>
+                <source src="videos/anime1.mp4" type="video/mp4">
+            </video>
+
+            <h3>Anime Edit</h3>
+            <p>Creative Anime Transitions</p>
+
+        </div>
+</div>
+    </section>
+
+
+    <!-- About -->
+
+    <section class="about">
+
+        <h2>Why Choose Editkaro?</h2>
+
+        <ul>
+            <li>Professional Video Editing</li>
+            <li>Creative Storytelling</li>
+            <li>Fast Delivery</li>
+            <li>Social Media Growth Focused</li>
+            <li>Custom Editing Solutions</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Work Together</h2>
+
+        <p>📧 contact@editkaro.in</p>
+        <p>📱 +91 98765 43210</p>
+        <p>🌐 www.editkaro.in</p>
+
+        <p>
+            Ready to transform your content into
+            engaging visual experiences.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Editkaro.in | All Rights Reserved
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
